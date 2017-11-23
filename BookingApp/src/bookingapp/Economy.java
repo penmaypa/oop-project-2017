@@ -9,35 +9,28 @@ package bookingapp;
  *
  * @author x16333223
  */
-public class Class extends Tickets{
+public class Economy extends Tickets {
     protected int economy;
-    protected int business;
-    protected int first;
+    protected int quantity;
     
-    public Class(){
+    public Economy(){
         economy = 0;
-        business = 40;
-        first = 80;
-                
+        quantity = 0;
+        
     }
 
-    public Class(int economy, int business, int first, int price, int total) {
+    public Economy(int economy, int quantity, int price, int total) {
         super(price, total);
         this.economy = economy;
-        this.business = business;
-        this.first = first;
+        this.quantity = quantity;
     }
 
     public void setEconomy(int economy) {
         this.economy = economy;
     }
 
-    public void setBusiness(int business) {
-        this.business = business;
-    }
-
-    public void setFirst(int first) {
-        this.first = first;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
     
     
