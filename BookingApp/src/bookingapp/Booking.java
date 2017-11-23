@@ -11,6 +11,9 @@ package bookingapp;
  */
 public class Booking {
     
+    public void computeDepart(){
+       
+    }
     
     
 }

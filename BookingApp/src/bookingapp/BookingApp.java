@@ -16,6 +16,8 @@ public class BookingApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        BookingGUI myGUI = new BookingGUI();
+        myGUI.setVisible(true);
     }
     
 }
