@@ -10,12 +10,13 @@ package bookingapp;
  * @author x16382003
  */
 public class BookingGUI extends javax.swing.JFrame {
-    private Booking b;
+    private Tickets t;
     /**
      * Creates new form BookingGUI
      */
     public BookingGUI() {
         initComponents();
+        t = new Tickets();
         
     }
 
@@ -133,7 +134,11 @@ public class BookingGUI extends javax.swing.JFrame {
 
     private void departCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departCBActionPerformed
            // TODO add your handling code here:
-           
+             if (departCB.getSelectedItem().equals("Dublin")) {
+                t.setDeparture("Dublin");
+            } else {
+                t.setDeparture("Cork");
+            }
     }//GEN-LAST:event_departCBActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

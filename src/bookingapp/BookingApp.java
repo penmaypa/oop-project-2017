@@ -10,16 +10,17 @@ import javax.swing.JOptionPane;
  *
  * @author x16382003
  */
-public class BookingApp extends Booking {
+public class BookingApp{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Booking b = new Booking();
+    
+        Tickets t = new Tickets();
         
-        JOptionPane.showMessageDialog(null, b.price);
+       JOptionPane.showMessageDialog(null,t.b.price);
     }
     
 }
