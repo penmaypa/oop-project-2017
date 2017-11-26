@@ -14,3 +14,7 @@ git clone -b <branch> <remote_repo>
 git clone -b lawrence https://github.com/penmaypa/oop-project-2017.git
 
 git clone -b rehan https://github.com/penmaypa/oop-project-2017.git
+
+git add .
+git commit -am "`date`"
+git push -u origin master
