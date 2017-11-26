@@ -1,0 +1,20 @@
+cd /H/'NCI Second Year'/'Object Orientated Programming'/Project/Github/'oop-project-2017'
+
+Penuel
+cd /H/'NCI Second Year'/'Object Orientated Programming'/Project/Github/Profiles/Penuel/oop-project-2017
+
+Rehan
+cd /H/'NCI Second Year'/'Object Orientated Programming'/Project/Github/Profiles/Rehan/oop-project-2017
+
+
+
+
+git clone -b <branch> <remote_repo>
+
+git clone -b lawrence https://github.com/penmaypa/oop-project-2017.git
+
+git clone -b rehan https://github.com/penmaypa/oop-project-2017.git
+
+git add .
+git commit -am "`date`"
+git push -u origin master
