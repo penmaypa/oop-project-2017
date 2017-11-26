@@ -19,8 +19,9 @@ public class BookingApp{
         // TODO code application logic here
     
         Tickets t = new Tickets();
+        BookingGUI myGUI = new BookingGUI();
         
-       JOptionPane.showMessageDialog(null,t.b.price);
+       myGUI.setVisible(true);
     }
     
 }
