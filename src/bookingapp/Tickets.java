@@ -9,33 +9,25 @@ package bookingapp;
  *
  * @author x16333223
  */
-public class Tickets {
-    protected int price;
-    protected int total;
+public class Tickets extends Booking {
+   protected Booking b ;
+   protected String departure;
+   protected String destination ;
+   
     
     public Tickets(){
-        price = 20;
-        total = 0;
+        b = new Booking();
+        departure = "";
+        destination = "";
     }
-
-    public Tickets(int price, int total) {
-        this.price = price;
-        this.total = total;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
-    }
-
-    public int getTotal() {
-        return total;
+    
+    public Tickets(String departure, String destination, Booking b){
+        this.departure = departure;
+        this.destination = destination;
+   
     }
     
     
-    
+
     
 }

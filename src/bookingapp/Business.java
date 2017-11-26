@@ -19,7 +19,7 @@ public class Business extends Tickets {
     }
 
     public Business(int business, int quantity, int price, int total) {
-        super(price, total);
+     
         this.business = business;
         this.quantity = quantity;
     }

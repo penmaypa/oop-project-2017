@@ -133,11 +133,7 @@ public class BookingGUI extends javax.swing.JFrame {
 
     private void departCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departCBActionPerformed
            // TODO add your handling code here:
-            if (typeCB.getSelectedItem().equals("Business")) {
-                m = new Business();
-            } else {
-                m = new Technical();
-            }
+           
     }//GEN-LAST:event_departCBActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

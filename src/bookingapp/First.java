@@ -19,7 +19,6 @@ public class First extends Tickets {
     }
 
     public First(int first, int quantity, int price, int total) {
-        super(price, total);
         this.first = first;
         this.quantity = quantity;
     }

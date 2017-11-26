@@ -20,7 +20,6 @@ public class Economy extends Tickets {
     }
 
     public Economy(int economy, int quantity, int price, int total) {
-        super(price, total);
         this.economy = economy;
         this.quantity = quantity;
     }

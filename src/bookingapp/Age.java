@@ -21,7 +21,6 @@ public class Age extends Tickets{
     }
 
     public Age(int adult, int child, int infant, int price, int total) {
-        super(price, total);
         this.adult = adult;
         this.child = child;
         this.infant = infant;
