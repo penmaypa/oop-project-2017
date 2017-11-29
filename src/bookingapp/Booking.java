@@ -15,12 +15,14 @@ public class Booking {
     protected double desPrice;
     protected double totalPrice;
     private String departure;
+    private String destination;
    
     
     public Booking(){
         basePrice = 20.00;
         depPrice = 0.00;
         desPrice = 0.00;
+        
 
     }
 
@@ -31,6 +33,16 @@ public class Booking {
     public void setDeparture(String departure) {
         this.departure = departure;
     }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+    
+    
 
   
     
