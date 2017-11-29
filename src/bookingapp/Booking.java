@@ -4,18 +4,70 @@
  * and open the template in the editor.
  */
 package bookingapp;
-import java.io.Serializable;
 /**
  *
  * @author x16382003
  */
-public class Booking implements Serializable {
-    protected double price;
+public class Booking {
+    
+    protected double basePrice;
+    protected double depPrice;
+    protected double desPrice;
+    protected double totalPrice;
+    private String departure;
+   
     
     public Booking(){
-        price = 20.00;
+        basePrice = 20.00;
+        depPrice = 0.00;
+        desPrice = 0.00;
+
+    }
+
+    public String getDeparture() {
+        return departure;
+    }
+
+    public void setDeparture(String departure) {
+        this.departure = departure;
+    }
+
+  
+    
+    public double getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(double basePrice) {
+        this.basePrice = basePrice;
+    }
+
+    public double getDepPrice() {
+        return depPrice;
+    }
+
+    public void setDepPrice(double depPrice) {
+        this.depPrice = depPrice;
+    }
+
+    public double getDesPrice() {
+        return desPrice;
+    }
+
+    public void setDesPrice(double desPrice) {
+        this.desPrice = desPrice;
     }
     
+    
+    public double totalPrice(double basePrice, double depPrice, double desPrice){
+        return basePrice + depPrice + desPrice;
+    }
+    
+
+}
+
+
+ /*
     public Booking(Double price){
        this.price = price;
     }
@@ -27,6 +79,4 @@ public class Booking implements Serializable {
     public void setPrice(double price) {
         this.price = price;
     }
-    
- 
-}
+    */

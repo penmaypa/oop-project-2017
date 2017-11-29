@@ -10,28 +10,13 @@ package bookingapp;
  * @author x16333223
  */
 public class Tickets extends Booking {
-   protected Booking b ;
+   protected Booking myBooking ;
    protected String departure;
-   protected String destination ;
+   protected String destination;
    
-    
+   
     public Tickets(){
-        b = new Booking();
-        departure = "";
-        destination = "";
-    }
-    
-    public Tickets(String departure, String destination, Booking b){
-        this.departure = departure;
-        this.destination = destination;
-    }
-
-    public Booking getB() {
-        return b;
-    }
-
-    public void setB(Booking b) {
-        this.b = b;
+        myBooking = new Booking();
     }
 
     public String getDeparture() {
@@ -41,17 +26,7 @@ public class Tickets extends Booking {
     public void setDeparture(String departure) {
         this.departure = departure;
     }
-
-    public String getDestination() {
-        return destination;
-    }
-
-    public void setDestination(String destination) {
-        this.destination = destination;
-    }
-    
-    
-    
-
+ 
+    //
     
 }

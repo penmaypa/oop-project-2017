@@ -10,18 +10,33 @@ import javax.swing.JOptionPane;
  *
  * @author x16382003
  */
-public class BookingApp{
+public class BookingApp extends Booking{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    
-        Tickets t = new Tickets();
-        BookingGUI myGUI = new BookingGUI();
+        /*
+        Booking myBooking = new Booking();
+       
         
-       myGUI.setVisible(true);
+        myBookingGUI.setVisible(true);
+       */
+         BookingGUI myBookingGUI = new BookingGUI();
+         Booking myBooking = new Booking();
+         
+         myBookingGUI.setVisible(true);
+         
+         /*JOptionPane.showMessageDialog(null, "Running on main " + myBooking.departure);*/
+    
+   
     }
     
 }
+
+
+/*
+    
+
+*/
