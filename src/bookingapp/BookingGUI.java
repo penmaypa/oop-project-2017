@@ -301,12 +301,14 @@ public class BookingGUI extends javax.swing.JFrame {
       booking.setDeparture(departure);
       destination= destinCB.getSelectedItem().toString();
       booking.setDestination(destination);
+      
       adult = adultCB.getSelectedItem().toString();
       booking.setAdult(Integer.parseInt(adult));
      
       child= childCB.getSelectedItem().toString();
       booking.setChild(Integer.parseInt(child));
-      adult= infantCB.getSelectedItem().toString();
+      
+      infant= infantCB.getSelectedItem().toString();
       booking.setInfant(Integer.parseInt(infant));
       
       
@@ -317,7 +319,9 @@ public class BookingGUI extends javax.swing.JFrame {
       
       JOptionPane.showMessageDialog(null, "Your are departing from " + booking.getDeparture() + " "+ booking.getDepPrice()
              + " \n You are going to  " + booking.getDestination() + " " + booking.getDesPrice()
-             +" \n Adults selected are; " + booking.getAdult() +" Childs amount is; "+ booking.getChild()  + " Infant amount is: "+ booking.getInfant() 
+             +" \n Adults selected are " + booking.getAdult() 
+              +" \n Childs amount is "+ booking.getChild()  
+              + "\n Infant amount is: "+ booking.getInfant() 
              + " \n Your total price is " + booking.getTotalPrice()
       );
       btn.setText("Hello");

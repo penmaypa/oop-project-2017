@@ -121,10 +121,11 @@ public class Booking {
 
     public double getAdultPrice() {
         if("Adult".equals(adult)){
-        }
-        
             return adultPrice = 10.00;
-        
+        }
+        else{
+            return adultPrice = 0.00;
+        }
     }
     
 
@@ -158,17 +159,18 @@ public class Booking {
         return infant;
     }
 
-    
-    
-    
-     
-     
-   
 
-   
-    public double getTotalPrice() {
+     public double getTotalPrice() {
+        
         return depPrice + desPrice+(adultPrice*adult)+(childPrice*child)+(infantPrice*infant);
     }
+    
+   /*
+        public double getTotalPrice() {
+
+            return depPrice + desPrice+(adultPrice*adult)+(childPrice*child)+(infantPrice*infant);
+        }
+    */
 
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
