@@ -12,8 +12,10 @@ package bookingapp;
 public class Economy extends Tickets {
     protected int economy;
     protected int quantity;
+    Tickets myTickets ;
     
     public Economy(){
+        myTickets = new Tickets();
         economy = 0;
         quantity = 0;
         
@@ -24,13 +26,4 @@ public class Economy extends Tickets {
         this.quantity = quantity;
     }
 
-    public void setEconomy(int economy) {
-        this.economy = economy;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-    
-    
 }

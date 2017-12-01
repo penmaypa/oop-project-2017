@@ -10,24 +10,20 @@ package bookingapp;
  *
  * @author x16333223
  */
-public class Tickets extends Booking {
-   protected Booking myBooking ;
+public class Tickets {
    protected String departure;
    protected String destination;
+   Booking myBooking;
    
    
-    public Tickets(){
-        myBooking = new Booking();
-    }
+    //
 
     public String getDeparture() {
-        return departure;
+        return departure = myBooking.departure ;
     }
 
     public void setDeparture(String departure) {
         this.departure = departure;
     }
- 
-    //
     
 }
