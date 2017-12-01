@@ -162,7 +162,7 @@ public class Booking {
 
      public double getTotalPrice() {
         
-        return depPrice + desPrice+(adultPrice*adult)+(childPrice*child)+(infantPrice*infant);
+        return totalPrice = ((depPrice + desPrice+adultPrice)*adult)+((depPrice + desPrice+childPrice)*child)/*infant is free*/ ;
     }
     
    /*
