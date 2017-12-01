@@ -14,17 +14,29 @@ public class Booking {
     protected double depPrice;
     protected double desPrice;
     protected double totalPrice;
-    private String departure;
-    private String destination;
+    protected String departure;
+    protected String destination;
+    protected int adult;
+    protected int child;
+    protected int infant;
+    protected double adultPrice;
+    protected double childPrice;
+    protected double infantPrice;
    
     
     public Booking(){
         basePrice = 20.00;
         depPrice = 0.00;
         desPrice = 0.00;
-        
-
+        adultPrice = 10.00;
+        childPrice = 5.00;
+        infantPrice = 0.00;
+        adult = 0;
+        child= 0 ;
+        infant = 0;
     }
+    
+    
 
     public String getDeparture() {
         return departure;
@@ -37,16 +49,8 @@ public class Booking {
     public String getDestination() {
         return destination;
     }
-
-    public void setDestination(String destination) {
-        this.destination = destination;
-    }
     
-    
-
-  
-    
-    public double getBasePrice() {
+     public double getBasePrice() {
         return basePrice;
     }
 
@@ -54,41 +58,166 @@ public class Booking {
         this.basePrice = basePrice;
     }
 
-    public double getDepPrice() {
-        return depPrice;
+
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 
-    public void setDepPrice(double depPrice) {
+  
+
+    public double getDepPrice() {
+        if("Dublin".equals(departure)){
+            return depPrice = 20.00;
+         }
+         else{   
+            return depPrice = 30.00;
+         }
+    }
+    
+      public void setDepPrice(double depPrice) {
         this.depPrice = depPrice;
     }
 
+    
     public double getDesPrice() {
-        return desPrice;
+       if("London".equals(destination)){
+            return desPrice = 30.00;
+         }
+         else{   
+            return desPrice = 60.00;
+         }
     }
-
-    public void setDesPrice(double desPrice) {
+    
+     public void setDesPrice(double desPrice) {
         this.desPrice = desPrice;
     }
+
+  
+    public void setAdult(int adult) {
+        this.adult = adult;
+    }
+
+    public void setChild(int child) {
+        this.child = child;
+    }
+
+    public void setInfant(int infant) {
+        this.infant = infant;
+    }
+     
+     
+
+    /*public void setAdultPrice(double adultPrice) {
+        this.adultPrice = adultPrice;
+    }
+
+    public void setChildPrice(double childPrice) {
+        this.childPrice = childPrice;
+    }
+
+    public void setInfantPrice(double infantPrice) {
+        this.infantPrice = infantPrice;
+    } */
+
+    public double getAdultPrice() {
+        if("Adult".equals(adult)){
+        }
+        
+            return adultPrice = 10.00;
+        
+    }
+    
+
+    public double getChildPrice() {
+        if("Child".equals(child)){
+           return childPrice = 5.00;
+        }
+         else{   
+            return childPrice = 0.00;
+         }
+    }
+
+    public double getInfantPrice() {
+        if("Infant".equals(infant)){
+          return infantPrice = 0.00;
+        }
+        else{   
+            return infantPrice = 0.00;
+         }
+    }
+
+    public int getAdult() {
+        return adult;
+    }
+
+    public int getChild() {
+        return child;
+    }
+
+    public int getInfant() {
+        return infant;
+    }
+
     
     
+    
+     
+     
+   
+
+   
+    public double getTotalPrice() {
+        return depPrice + desPrice+(adultPrice*adult)+(childPrice*child)+(infantPrice*infant);
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+    
+    
+    
+    
+    
+
+    
+    
+        /*
+               public void calcDepPrice(){
+               if("Dublin".equals(departure)){
+                   depPrice = 30.00;
+                }
+                else{   
+                    depPrice = 20.00;
+                 }
+            }
+    */
+    
+    public void calcDesPrice(){
+        if("London".equals(departure)){
+            desPrice = 30.00;
+        }
+        else{
+            desPrice =60.00;
+        }
+            
+    }
+    
+            /*
+            public void calcTotalPrice(){
+                totalPrice = depPrice + desPrice + basePrice ;
+            }
+            */
+    
+ 
+
+   /* 
     public double totalPrice(double basePrice, double depPrice, double desPrice){
         return basePrice + depPrice + desPrice;
     }
+    */
+
+    
     
 
 }
 
-
- /*
-    public Booking(Double price){
-       this.price = price;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-    */
