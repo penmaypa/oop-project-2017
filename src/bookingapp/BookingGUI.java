@@ -18,6 +18,7 @@ public class BookingGUI extends javax.swing.JFrame {
     String child;
     String infant;
     Economy myEconomy; 
+    Business myBusiness;
     
     
     /**
@@ -27,6 +28,8 @@ public class BookingGUI extends javax.swing.JFrame {
         initComponents();
         booking = new Booking();
         myTickets = new Tickets();
+        myEconomy = new Economy();
+        myBusiness = new Business();
     }
 
     /**
@@ -344,11 +347,12 @@ public class BookingGUI extends javax.swing.JFrame {
               + "\n Total Price = " + myTickets.totalPrice
          );
        
-       myEconomy = new Economy();
-       myTickets.getDestination();
+       myEconomy.setDestination(myTickets.destination);
        
        JOptionPane.showMessageDialog(null, "This the value from Economy: "
-               + "\n Economy = " + myEconomy.destination1
+               + "\n" + myTickets.getDestination()
+              + "\n Economy  " + myEconomy.getDestination()
+               +"\n The value of Business under TotalPrice is " + myBusiness.getTotalPrice()
         );
     }//GEN-LAST:event_nextBTActionPerformed
 

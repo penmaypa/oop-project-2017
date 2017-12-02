@@ -33,7 +33,7 @@ public class Tickets {
     }
 
     public String getDestination() {
-        return destination;
+        return destination ;
     }
 
     public void setDestination(String destination) {
@@ -47,7 +47,5 @@ public class Tickets {
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
-    
-    
-    
+   
 }

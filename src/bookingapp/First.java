@@ -10,25 +10,11 @@ package bookingapp;
  * @author x16333223
  */
 public class First extends Tickets {
-    protected int first;
-    protected int quantity;
     
-    public First(){
-        first = 25;
-        quantity = 0;
-    }
+    String Meal;
 
-    public First(int first, int quantity, int price, int total) {
-        this.first = first;
-        this.quantity = quantity;
-    }
-
-    public void setFirst(int first) {
-        this.first = first;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public First(String Meal) {
+        this.Meal = "Just Main (drink excluded)";
     }
     
     

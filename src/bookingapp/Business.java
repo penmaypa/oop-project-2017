@@ -10,27 +10,6 @@ package bookingapp;
  * @author x16333223
  */
 public class Business extends Tickets {
-    protected int business;
-    protected int quantity;
-    
-    public Business(){
-        business = 15;
-        quantity = 0;
-    }
-
-    public Business(int business, int quantity, int price, int total) {
-     
-        this.business = business;
-        this.quantity = quantity;
-    }
-
-    public void setBusiness(int business) {
-        this.business = business;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
     
     
 }
