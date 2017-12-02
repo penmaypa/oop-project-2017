@@ -17,9 +17,10 @@ public class Tickets {
    double  totalPrice;
    
     public Tickets(){
-        totalPrice = 20.00;
+        myBooking = new Booking();
+        totalPrice = 0.00;
      }
-   
+
    
     //
 
@@ -37,6 +38,14 @@ public class Tickets {
 
     public void setDestination(String destination) {
         this.destination = destination;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
     }
     
     

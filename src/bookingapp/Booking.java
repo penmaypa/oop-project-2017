@@ -22,6 +22,7 @@ public class Booking {
     protected double adultPrice;
     protected double childPrice;
     protected double infantPrice;
+    Tickets myTickets = new Tickets();
    
     
     public Booking(){
@@ -34,6 +35,7 @@ public class Booking {
         adult = 0;
         child= 0 ;
         infant = 0;
+        
     }
     
     
@@ -67,10 +69,10 @@ public class Booking {
 
     public double getDepPrice() {
         if("Dublin".equals(departure)){
-            return depPrice = 20.00;
+            return depPrice = 10.00;
          }
          else{   
-            return depPrice = 30.00;
+            return depPrice = 20.00;
          }
     }
     
@@ -84,7 +86,7 @@ public class Booking {
             return desPrice = 30.00;
          }
          else{   
-            return desPrice = 60.00;
+            return desPrice = 50.00;
          }
     }
     
@@ -170,14 +172,7 @@ public class Booking {
         this.totalPrice = totalPrice;
     }
     
-    
-    
-    
-    
-
-    
-    
-        /*
+       /*
                public void calcDepPrice(){
                if("Dublin".equals(departure)){
                    depPrice = 30.00;
