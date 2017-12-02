@@ -317,9 +317,10 @@ public class BookingGUI extends javax.swing.JFrame {
       infant= infantCB.getSelectedItem().toString();
       booking.setInfant(Integer.parseInt(infant));
       
-        booking.getTotalPrice();
+      //booking.getTotalPrice();
+      //myTickets.setTotalPrice(booking.totalPrice);
       
-      myTickets.setTotalPrice(booking.totalPrice);
+      myTickets.setTotalPrice(booking.getTotalPrice());
       
       
       System.out.println(booking.getDeparture());
