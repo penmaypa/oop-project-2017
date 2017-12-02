@@ -317,6 +317,8 @@ public class BookingGUI extends javax.swing.JFrame {
       infant= infantCB.getSelectedItem().toString();
       booking.setInfant(Integer.parseInt(infant));
       
+      myTickets.setTotalPrice(booking.totalPrice);
+      
       
       System.out.println(booking.getDeparture());
       System.out.println(booking.getDepPrice());
@@ -331,6 +333,7 @@ public class BookingGUI extends javax.swing.JFrame {
              + " \n Your total price is " + booking.getTotalPrice()
       );
       btn.setText("Hello");
+      
         
        JOptionPane.showMessageDialog(null, "  \n Promp Test \n The value of Ticket variables are \n Departure = " + myTickets.departure
               + "\n Destination = " + myTickets.destination

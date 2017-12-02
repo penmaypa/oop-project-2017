@@ -22,7 +22,6 @@ public class Booking {
     protected double adultPrice;
     protected double childPrice;
     protected double infantPrice;
-   
     
     public Booking(){
         basePrice = 20.00;

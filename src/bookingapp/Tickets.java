@@ -13,11 +13,12 @@ package bookingapp;
 public class Tickets {
    protected String departure;
    protected String destination;
-   Booking myBooking;
-   double  totalPrice;
+   Booking myBooking = new Booking();
+   double totalPrice ;
+ 
    
     public Tickets(){
-        totalPrice = 20.00;
+        
      }
    
    
@@ -37,6 +38,14 @@ public class Tickets {
 
     public void setDestination(String destination) {
         this.destination = destination;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
     }
     
     
