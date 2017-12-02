@@ -10,20 +10,24 @@ package bookingapp;
  * @author x16333223
  */
 public class Economy extends Tickets {
-    protected int economy;
-    protected int quantity;
+
     Tickets myTickets ;
+    String destination1;
     
     public Economy(){
         myTickets = new Tickets();
-        economy = 0;
-        quantity = 0;
-        
+        destination1 = "";
+ 
     }
 
-    public Economy(int economy, int quantity, int price, int total) {
-        this.economy = economy;
-        this.quantity = quantity;
+    public String getDestination1() {
+        return myTickets.getDestination();
     }
+
+    public void setDestination1(String destination1) {
+        myTickets.setDestination(destination);
+    }
+    
+
 
 }

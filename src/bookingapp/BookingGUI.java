@@ -17,6 +17,7 @@ public class BookingGUI extends javax.swing.JFrame {
     String adult;
     String child;
     String infant;
+    Economy myEconomy; 
     
     
     /**
@@ -342,6 +343,13 @@ public class BookingGUI extends javax.swing.JFrame {
               + "\n Destination = " + myTickets.destination
               + "\n Total Price = " + myTickets.totalPrice
          );
+       
+       myEconomy = new Economy();
+       myTickets.getDestination();
+       
+       JOptionPane.showMessageDialog(null, "This the value from Economy: "
+               + "\n Economy = " + myEconomy.destination1
+        );
     }//GEN-LAST:event_nextBTActionPerformed
 
     private void onereturnCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onereturnCBActionPerformed
