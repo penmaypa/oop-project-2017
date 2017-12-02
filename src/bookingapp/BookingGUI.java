@@ -24,7 +24,8 @@ public class BookingGUI extends javax.swing.JFrame {
      */
     public BookingGUI() {
         initComponents();
- 
+        booking = new Booking();
+        myTickets = new Tickets();
     }
 
     /**
@@ -299,10 +300,13 @@ public class BookingGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
  
       departure= departCB.getSelectedItem().toString();
-      booking = new Booking();
       booking.setDeparture(departure);
+      myTickets.setDeparture(departure);
       destination= destinCB.getSelectedItem().toString();
       booking.setDestination(destination);
+      myTickets.setDestination(destination);
+      
+     // myTickets.setDestination(destination);
       
       adult = adultCB.getSelectedItem().toString();
       booking.setAdult(Integer.parseInt(adult));
@@ -327,7 +331,11 @@ public class BookingGUI extends javax.swing.JFrame {
              + " \n Your total price is " + booking.getTotalPrice()
       );
       btn.setText("Hello");
-            
+        
+       JOptionPane.showMessageDialog(null, "  \n Promp Test \n The value of Ticket variables are \n Departure = " + myTickets.departure
+              + "\n Destination = " + myTickets.destination
+              + "\n Total Price = " + myTickets.totalPrice
+         );
     }//GEN-LAST:event_nextBTActionPerformed
 
     private void onereturnCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onereturnCBActionPerformed

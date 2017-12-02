@@ -27,11 +27,8 @@ public class BookingApp extends Booking{
          Booking myBooking = new Booking();
          Tickets myTickets = new Tickets();
          
-         myBookingGUI.setVisible(false);
-         JOptionPane.showMessageDialog(null, "Departure " + myTickets.departure
-                 + "Destination " + myTickets.destination 
-         );
-    
+         myBookingGUI.setVisible(true);
+        
          
          /*JOptionPane.showMessageDialog(null, "Running on main " + myBooking.departure);*/
     

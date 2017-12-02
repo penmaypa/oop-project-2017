@@ -14,16 +14,31 @@ public class Tickets {
    protected String departure;
    protected String destination;
    Booking myBooking;
+   double  totalPrice;
+   
+    public Tickets(){
+        totalPrice = 20.00;
+     }
    
    
     //
 
     public String getDeparture() {
-        return departure = myBooking.departure ;
+        return departure ;
     }
 
     public void setDeparture(String departure) {
         this.departure = departure;
     }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+    
+    
     
 }
