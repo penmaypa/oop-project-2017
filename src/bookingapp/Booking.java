@@ -168,51 +168,6 @@ public class Booking {
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
-    
-    
-    
-    
-    
-
-    
-    
-        /*
-               public void calcDepPrice(){
-               if("Dublin".equals(departure)){
-                   depPrice = 30.00;
-                }
-                else{   
-                    depPrice = 20.00;
-                 }
-            }
-    */
-    
-    public void calcDesPrice(){
-        if("London".equals(departure)){
-            desPrice = 30.00;
-        }
-        else{
-            desPrice =60.00;
-        }
-            
-    }
-    
-            /*
-            public void calcTotalPrice(){
-                totalPrice = depPrice + desPrice + basePrice ;
-            }
-            */
-    
- 
-
-   /* 
-    public double totalPrice(double basePrice, double depPrice, double desPrice){
-        return basePrice + depPrice + desPrice;
-    }
-    */
-
-    
-    
 
 }
 

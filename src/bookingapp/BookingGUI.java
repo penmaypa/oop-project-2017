@@ -337,19 +337,21 @@ public class BookingGUI extends javax.swing.JFrame {
       btn.setText("Hello");
       
         
-       JOptionPane.showMessageDialog(null, "\n The value of Ticket variables are \n Departure = " + myTickets.departure
+       JOptionPane.showMessageDialog(null, "\n Tickets: \n Departure = " + myTickets.departure
               + "\n Destination = " + myTickets.destination
                + "\n Tickets > totalPrice = " + myTickets.totalPrice
-               + "\n Tickets > TotalPrice = " + myTickets.TotalPrice()
+               + "\n Tickets > getTotalPrice = " + myTickets.getTotalPrice()
          );
        
        myEconomy.setDestination(myTickets.destination);
        
-       JOptionPane.showMessageDialog(null, "This the value from Economy: "
-               + "\n Economy > destination" + myTickets.destination
+       JOptionPane.showMessageDialog(null, "Economy: "
+               + "\n Economy > myTickets.destination = " + myTickets.destination
               + "\n Economy > getDestination =   " + myEconomy.getDestination()
+               +"\n Economy > totalPrice = " + myEconomy.totalPrice
+               + "\n Economy > getTotalPrice = " + myEconomy.getTotalPrice()
                
-               + "\n \n This the value under Business"
+               + "\n \n Business: "
                + "\n The value of Business > totalPrice = " + myBusiness.totalPrice
                + "\n The value of Business > meal = " + myBusiness.meal
         );
