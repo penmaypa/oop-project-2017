@@ -11,5 +11,12 @@ package bookingapp;
  */
 public class Business extends Tickets {
     
+    Tickets myTickets;
     
+    protected String meal;
+
+    public Business() {
+        myTickets = new Tickets();
+        meal = "Just Main (drink excluded)";
+    }
 }

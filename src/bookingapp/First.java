@@ -10,12 +10,7 @@ package bookingapp;
  * @author x16333223
  */
 public class First extends Tickets {
-    
-    String Meal;
-
-    public First(String Meal) {
-        this.Meal = "Just Main (drink excluded)";
-    }
+  
     
     
 }

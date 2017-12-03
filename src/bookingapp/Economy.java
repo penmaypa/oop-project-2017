@@ -11,6 +11,11 @@ package bookingapp;
  */
 public class Economy extends Tickets{
 
-    Tickets myTickets = new Tickets() ;
+    Tickets myTickets;
     
+    public Economy(){
+        myTickets = new Tickets();
+    }
+
 }
+

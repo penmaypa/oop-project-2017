@@ -324,13 +324,8 @@ public class BookingGUI extends javax.swing.JFrame {
       //booking.getTotalPrice();
       //myTickets.setTotalPrice(booking.totalPrice);
       
-      myTickets.setTotalPrice(booking.getTotalPrice());
+     // myTickets.setTotalPrice(booking.getTotalPrice());
       
-      
-      System.out.println(booking.getDeparture());
-      System.out.println(booking.getDepPrice());
-      
-      System.out.println(booking.getTotalPrice());
       
       JOptionPane.showMessageDialog(null, "Your are departing from " + booking.getDeparture() + " "+ booking.getDepPrice()
              + " \n You are going to  " + booking.getDestination() + " " + booking.getDesPrice()
@@ -342,17 +337,21 @@ public class BookingGUI extends javax.swing.JFrame {
       btn.setText("Hello");
       
         
-       JOptionPane.showMessageDialog(null, "  \n Promp Test \n The value of Ticket variables are \n Departure = " + myTickets.departure
+       JOptionPane.showMessageDialog(null, "\n The value of Ticket variables are \n Departure = " + myTickets.departure
               + "\n Destination = " + myTickets.destination
-              + "\n Total Price = " + myTickets.totalPrice
+               + "\n Tickets > totalPrice = " + myTickets.totalPrice
+               + "\n Tickets > TotalPrice = " + myTickets.TotalPrice()
          );
        
        myEconomy.setDestination(myTickets.destination);
        
        JOptionPane.showMessageDialog(null, "This the value from Economy: "
-               + "\n" + myTickets.getDestination()
-              + "\n Economy  " + myEconomy.getDestination()
-               +"\n The value of Business under TotalPrice is " + myBusiness.getTotalPrice()
+               + "\n Economy > destination" + myTickets.destination
+              + "\n Economy > getDestination =   " + myEconomy.getDestination()
+               
+               + "\n \n This the value under Business"
+               + "\n The value of Business > totalPrice = " + myBusiness.totalPrice
+               + "\n The value of Business > meal = " + myBusiness.meal
         );
     }//GEN-LAST:event_nextBTActionPerformed
 
