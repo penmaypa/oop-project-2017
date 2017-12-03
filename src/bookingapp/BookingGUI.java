@@ -323,16 +323,25 @@ public class BookingGUI extends javax.swing.JFrame {
       
       //booking.getTotalPrice();
       //myTickets.setTotalPrice(booking.totalPrice);
+     //myTickets.setTotalPrice(booking.getTotalPrice());
+     
+     //booking.getTotalPrice();
+     myTickets.setTotalPrice(booking.getTotalPrice());
+ 
+
+  
+     
+     
       
-     // myTickets.setTotalPrice(booking.getTotalPrice());
       
-      
-      JOptionPane.showMessageDialog(null, "Your are departing from " + booking.getDeparture() + " "+ booking.getDepPrice()
+      JOptionPane.showMessageDialog(null, "/n Booking:  "
+              +"Booking n/ Your are departing from " + booking.getDeparture() + " "+ booking.getDepPrice()
              + " \n You are going to  " + booking.getDestination() + " " + booking.getDesPrice()
              +" \n Adults selected are " + booking.getAdult() 
               +" \n Childs amount is "+ booking.getChild()  
               + "\n Infant amount is: "+ booking.getInfant() 
-             + " \n Your total price is " + booking.getTotalPrice()
+             + " \n get.TotalPrice " + booking.getTotalPrice()
+              + "\n totalPrice = " + booking.totalPrice
       );
       btn.setText("Hello");
       
@@ -341,6 +350,8 @@ public class BookingGUI extends javax.swing.JFrame {
               + "\n Destination = " + myTickets.destination
                + "\n Tickets > totalPrice = " + myTickets.totalPrice
                + "\n Tickets > getTotalPrice = " + myTickets.getTotalPrice()
+               +"\n Tickets > testPrice = " + myTickets.testPrice
+               + "\n Tickets > getTestPrice() = " + myTickets.getTestPrice()
          );
        
        myEconomy.setDestination(myTickets.destination);
@@ -350,11 +361,14 @@ public class BookingGUI extends javax.swing.JFrame {
               + "\n Economy > getDestination =   " + myEconomy.getDestination()
                +"\n Economy > totalPrice = " + myEconomy.totalPrice
                + "\n Economy > getTotalPrice = " + myEconomy.getTotalPrice()
+               +"\n myEconomy.getTestPrice = " + myEconomy.getTestPrice()
                
                + "\n \n Business: "
                + "\n The value of Business > totalPrice = " + myBusiness.totalPrice
                + "\n The value of Business > meal = " + myBusiness.meal
         );
+       
+       myTickets.setTotalPrice(booking.getTotalPrice());
     }//GEN-LAST:event_nextBTActionPerformed
 
     private void onereturnCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onereturnCBActionPerformed

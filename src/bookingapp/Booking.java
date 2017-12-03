@@ -22,6 +22,8 @@ public class Booking {
     protected double adultPrice;
     protected double childPrice;
     protected double infantPrice;
+    protected double testPrice ;
+  
     
     public Booking(){
         basePrice = 20.00;
@@ -158,16 +160,30 @@ public class Booking {
         return infant;
     }
 
+    public void computeTotal(){
+    
+        
+    }
 
      public double getTotalPrice() {
         
         return totalPrice = ((depPrice + desPrice+adultPrice)*adult)+((depPrice + desPrice+childPrice)*child)/*infant is free*/ ;
+       // return totalPrice = 999.00;
     }
   
 
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
+
+    public double getTestPrice() {
+        return testPrice = 777.00;
+    }
+
+    public void setTestPrice(double testPrice) {
+        this.testPrice = testPrice;
+    }
+    
 
 }
 

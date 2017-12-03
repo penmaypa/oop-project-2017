@@ -15,11 +15,12 @@ public class Tickets {
    protected String destination;
    Booking myBooking = new Booking();
    protected double totalPrice;
-   protected double totalPrice1;
+   protected double testPrice;
    
     public Tickets(){
-        totalPrice1 = 123.00;
+
      }
+   
    
     //
 
@@ -44,11 +45,22 @@ public class Tickets {
     }
     */
 
+    
     public double getTotalPrice() {
-        return totalPrice = 58.00;
+        return totalPrice = myBooking.getTotalPrice();
     }
 
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
+
+    public double getTestPrice() {
+        return testPrice = myBooking.getTestPrice();
+    }
+
+    public void setTestPrice(double testPrice) {
+        this.testPrice = testPrice;
+    }
+
+    
 }
