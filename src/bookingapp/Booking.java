@@ -23,6 +23,7 @@ public class Booking {
     protected double childPrice;
     protected double infantPrice;
     protected double testPrice ;
+    protected double computeTotal;
   
     
     public Booking(){
@@ -160,15 +161,12 @@ public class Booking {
         return infant;
     }
 
-    public void computeTotal(){
-    
-        
-    }
+   
 
      public double getTotalPrice() {
-        
-        return totalPrice = ((depPrice + desPrice+adultPrice)*adult)+((depPrice + desPrice+childPrice)*child)/*infant is free*/ ;
-       // return totalPrice = 999.00;
+        //return totalPrice = ((depPrice + desPrice+adultPrice)*adult)+((depPrice + desPrice+childPrice)*child)/*infant is free*/ ;
+        return totalPrice = ((getDepPrice() + getDesPrice() +getAdultPrice())*getAdult())+((getDepPrice() + getDesPrice() + getChildPrice())*getChild())/*infant is free*/ ;
+       //return totalPrice = 999.00;
     }
   
 

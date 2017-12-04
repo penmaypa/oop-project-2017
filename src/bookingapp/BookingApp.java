@@ -26,6 +26,7 @@ public class BookingApp extends Booking{
          BookingGUI myBookingGUI = new BookingGUI();
          Booking myBooking = new Booking();
          Tickets myTickets = new Tickets();
+ 
          
          myBookingGUI.setVisible(true);
          

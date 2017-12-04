@@ -18,7 +18,7 @@ public class Tickets {
    protected double testPrice;
    
     public Tickets(){
-
+   
      }
    
    
@@ -47,16 +47,19 @@ public class Tickets {
 
     
     public double getTotalPrice() {
-        return totalPrice = myBooking.getTotalPrice();
+        return totalPrice = myBooking.getTotalPrice() ;
     }
 
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
-
+    
+    
     public double getTestPrice() {
-        return testPrice = myBooking.getTestPrice();
+        return testPrice= myBooking.getTestPrice();
     }
+
+    
 
     public void setTestPrice(double testPrice) {
         this.testPrice = testPrice;

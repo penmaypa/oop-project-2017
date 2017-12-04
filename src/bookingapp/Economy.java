@@ -18,5 +18,6 @@ public class Economy extends Tickets{
 
     }
 
+    
 }
 

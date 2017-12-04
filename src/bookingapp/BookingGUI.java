@@ -26,10 +26,7 @@ public class BookingGUI extends javax.swing.JFrame {
      */
     public BookingGUI() {
         initComponents();
-        booking = new Booking();
-        myTickets = new Tickets();
-        myEconomy = new Economy();
-        myBusiness = new Business();
+        
     }
 
     /**
@@ -302,6 +299,8 @@ public class BookingGUI extends javax.swing.JFrame {
 
     private void nextBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextBTActionPerformed
         // TODO add your handling code here:
+        
+        
  
       departure= departCB.getSelectedItem().toString();
       booking.setDeparture(departure);
@@ -326,9 +325,9 @@ public class BookingGUI extends javax.swing.JFrame {
      //myTickets.setTotalPrice(booking.getTotalPrice());
      
      //booking.getTotalPrice();
-     myTickets.setTotalPrice(booking.getTotalPrice());
- 
-
+     //myTickets.setTotalPrice(booking.getTotalPrice());
+     //myEconomy.getTotalPrice();
+     
   
      
      
@@ -342,6 +341,9 @@ public class BookingGUI extends javax.swing.JFrame {
               + "\n Infant amount is: "+ booking.getInfant() 
              + " \n get.TotalPrice " + booking.getTotalPrice()
               + "\n totalPrice = " + booking.totalPrice
+              +"\n getTestPrice = " + booking.getTestPrice()
+              + "\n testPrice = " + booking.testPrice
+      
       );
       btn.setText("Hello");
       
@@ -354,21 +356,22 @@ public class BookingGUI extends javax.swing.JFrame {
                + "\n Tickets > getTestPrice() = " + myTickets.getTestPrice()
          );
        
-       myEconomy.setDestination(myTickets.destination);
+       //myEconomy.setDestination(myTickets.destination);
        
        JOptionPane.showMessageDialog(null, "Economy: "
                + "\n Economy > myTickets.destination = " + myTickets.destination
               + "\n Economy > getDestination =   " + myEconomy.getDestination()
                +"\n Economy > totalPrice = " + myEconomy.totalPrice
-               + "\n Economy > getTotalPrice = " + myEconomy.getTotalPrice()
-               +"\n myEconomy.getTestPrice = " + myEconomy.getTestPrice()
+               + "\n Economy > getTotalPrice() = " + myEconomy.getTotalPrice()
+               +"\n myEconomy.getTestPrice() = " + myEconomy.getTestPrice()
+               +"\n myEconomy.testPrice= " + myEconomy.testPrice
                
                + "\n \n Business: "
                + "\n The value of Business > totalPrice = " + myBusiness.totalPrice
                + "\n The value of Business > meal = " + myBusiness.meal
         );
        
-       myTickets.setTotalPrice(booking.getTotalPrice());
+       //myTickets.setTotalPrice(booking.getTotalPrice());
     }//GEN-LAST:event_nextBTActionPerformed
 
     private void onereturnCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onereturnCBActionPerformed

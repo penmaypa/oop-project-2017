@@ -19,4 +19,11 @@ public class Business extends Tickets {
         myTickets = new Tickets();
         meal = "Just Main (drink excluded)";
     }
+
+    @Override
+    public void setTotalPrice(double totalPrice) {
+        super.setTotalPrice(totalPrice); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
 }
