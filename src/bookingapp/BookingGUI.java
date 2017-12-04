@@ -325,7 +325,7 @@ public class BookingGUI extends javax.swing.JFrame {
       
       //booking.getTotalPrice();
       //myTickets.setTotalPrice(booking.totalPrice);
-     //myTickets.setTotalPrice(booking.getTotalPrice());
+     myTickets.setTotalPrice(booking.getTotalPrice());
      
      //booking.getTotalPrice();
     // myTickets.setTotalPrice(booking.getTotalPrice());

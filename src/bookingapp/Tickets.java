@@ -46,9 +46,14 @@ public class Tickets {
     }
     */
 
-    
+   /* 
     public double getTotalPrice() {
         return totalPrice = myBooking.getTotalPrice();
+    }
+    */
+    
+    public double getTotalPrice() {
+        return totalPrice;
     }
 
     public void setTotalPrice(double totalPrice) {
