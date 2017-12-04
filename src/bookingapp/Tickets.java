@@ -66,9 +66,5 @@ public class Tickets {
     public String getSnacks() {
         return snacks = "peanuts";
     }
-
-    public void setSnacks(String snacks) {
-        this.snacks = snacks;
-    }
     
 }

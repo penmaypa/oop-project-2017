@@ -19,6 +19,7 @@ public class BookingGUI extends javax.swing.JFrame {
     String infant;
     Economy myEconomy; 
     Business myBusiness;
+    First myFirst;
     
     
     /**
@@ -30,6 +31,7 @@ public class BookingGUI extends javax.swing.JFrame {
         myTickets = new Tickets();
         myEconomy = new Economy();
         myBusiness = new Business();
+        myFirst = new First();
     }
 
     /**
@@ -326,8 +328,8 @@ public class BookingGUI extends javax.swing.JFrame {
      //myTickets.setTotalPrice(booking.getTotalPrice());
      
      //booking.getTotalPrice();
-     myTickets.setTotalPrice(booking.getTotalPrice());
-     myTickets.setSnacks(myTickets.getSnacks());
+    // myTickets.setTotalPrice(booking.getTotalPrice());
+     //myTickets.setSnacks(myTickets.getSnacks());
 
     
      
@@ -370,8 +372,14 @@ public class BookingGUI extends javax.swing.JFrame {
                +"\n myEconomy.getSnacks = " + myEconomy.getSnacks()
                
                + "\n \n Business: "
-               + "\n The value of Business > totalPrice = " + myBusiness.totalPrice
-               + "\n The value of Business > meal = " + myBusiness.meal
+               + "\n Business > totalPrice = " + myBusiness.totalPrice
+               + "\n Business > getSnacks = " + myBusiness.getSnacks()
+               + "\n Business > getMeal = " + myBusiness.getMeal()
+               
+               + "\n \n First: "
+               + "\n First > totalPrice = " + myFirst.totalPrice
+               + "\n First > getSnacks = " + myFirst.getSnacks()
+                + "\n First> getMeal = " + myFirst.getMeal()
         );
        
        //myTickets.setTotalPrice(booking.getTotalPrice());

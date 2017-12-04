@@ -166,7 +166,6 @@ public class Booking {
     }
 
      public double getTotalPrice() {
-        
         return totalPrice = ((depPrice + desPrice+adultPrice)*adult)+((depPrice + desPrice+childPrice)*child)/*infant is free*/ ;
        // return totalPrice = 999.00;
     }

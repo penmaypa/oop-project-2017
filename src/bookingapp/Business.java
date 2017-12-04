@@ -13,10 +13,20 @@ public class Business extends Tickets {
     
     Tickets myTickets;
     
-    protected String meal;
 
     public Business() {
         myTickets = new Tickets();
-        meal = "Just Main (drink excluded)";
     }
+    
+    @Override
+    public String getSnacks() {
+        return snacks = "Premium Cookies";
+    }
+    
+   public String getMeal(){
+       return " Main Course (excluding desert)";
+   }
+   
+    
+    
 }

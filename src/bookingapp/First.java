@@ -10,7 +10,19 @@ package bookingapp;
  * @author x16333223
  */
 public class First extends Tickets {
-  
+
+    @Override
+    public String getSnacks() {
+        return snacks = "Scones, Cupcake & Coffee";
+    }
     
+    public String getMeal() {
+        return "5 Course Meal";
+    }
+    
+    public String getDrink(){
+        return "a bottle of wine & unlimited coffee/tea" ;
+    }
+
     
 }
