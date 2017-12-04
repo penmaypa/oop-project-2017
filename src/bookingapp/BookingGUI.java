@@ -307,6 +307,7 @@ public class BookingGUI extends javax.swing.JFrame {
       booking.setDeparture(departure);
       myTickets.setDeparture(departure);
       destination= destinCB.getSelectedItem().toString();
+     
       booking.setDestination(destination);
       myTickets.setDestination(destination);
       
@@ -339,7 +340,7 @@ public class BookingGUI extends javax.swing.JFrame {
         
        JOptionPane.showMessageDialog(null, "\n Tickets: \n Departure = " + myTickets.departure
               + "\n Destination = " + myTickets.destination
-               + "\n Tickets > totalPrice = " + myTickets.totalPrice
+               + "\n Tickets > totalPrice = " + myTickets.getTotalPrice()
                + "\n Tickets > getTotalPrice = " + myTickets.getTotalPrice()
          );
        
@@ -354,7 +355,9 @@ public class BookingGUI extends javax.swing.JFrame {
                + "\n \n Business: "
                + "\n The value of Business > totalPrice = " + myBusiness.totalPrice
                + "\n The value of Business > meal = " + myBusiness.meal
+       
         );
+        System.out.println(myTickets.getTotalPrice());
     }//GEN-LAST:event_nextBTActionPerformed
 
     private void onereturnCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onereturnCBActionPerformed
@@ -371,6 +374,7 @@ public class BookingGUI extends javax.swing.JFrame {
 
     private void destinCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_destinCBActionPerformed
         // TODO add your handling code here:
+    
     }//GEN-LAST:event_destinCBActionPerformed
 
     private void adultCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adultCBActionPerformed

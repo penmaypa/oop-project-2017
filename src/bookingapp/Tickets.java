@@ -10,7 +10,7 @@ package bookingapp;
  *
  * @author x16333223
  */
-public class Tickets {
+public class Tickets extends Booking{
    protected String departure;
    protected String destination;
    Booking myBooking = new Booking();
@@ -45,7 +45,7 @@ public class Tickets {
     */
 
     public double getTotalPrice() {
-        return totalPrice = 58.00;
+        return totalPrice = myBooking.getTotalPrice();
     }
 
     public void setTotalPrice(double totalPrice) {
