@@ -226,21 +226,21 @@ public class BookingGUI extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 503, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(59, Short.MAX_VALUE))
                     .addComponent(jSeparator4)))
             .addGroup(layout.createSequentialGroup()
                 .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(89, 89, 89)
-                        .addComponent(nextBT, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btn)
-                        .addGap(52, 52, 52))))
+                        .addGap(52, 52, 52))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(nextBT, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -327,6 +327,10 @@ public class BookingGUI extends javax.swing.JFrame {
      
      //booking.getTotalPrice();
      myTickets.setTotalPrice(booking.getTotalPrice());
+     myTickets.setSnacks(myTickets.getSnacks());
+
+    
+     
  
 
   
@@ -357,18 +361,20 @@ public class BookingGUI extends javax.swing.JFrame {
        myEconomy.setDestination(myTickets.destination);
        
        JOptionPane.showMessageDialog(null, "Economy: "
-               + "\n Economy > myTickets.destination = " + myTickets.destination
-              + "\n Economy > getDestination =   " + myEconomy.getDestination()
+              + "\n Economy > getDeparture =   " + myEconomy.getDeparture()
+               + "\n Economy > getDestination =   " + myEconomy.getDestination()
                +"\n Economy > totalPrice = " + myEconomy.totalPrice
                + "\n Economy > getTotalPrice = " + myEconomy.getTotalPrice()
                +"\n myEconomy.getTestPrice = " + myEconomy.getTestPrice()
+               +"\n myEconomy.snacks = " + myEconomy.snacks
+               +"\n myEconomy.getSnacks = " + myEconomy.getSnacks()
                
                + "\n \n Business: "
                + "\n The value of Business > totalPrice = " + myBusiness.totalPrice
                + "\n The value of Business > meal = " + myBusiness.meal
         );
        
-       myTickets.setTotalPrice(booking.getTotalPrice());
+       //myTickets.setTotalPrice(booking.getTotalPrice());
     }//GEN-LAST:event_nextBTActionPerformed
 
     private void onereturnCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onereturnCBActionPerformed

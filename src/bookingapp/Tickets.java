@@ -16,6 +16,7 @@ public class Tickets {
    Booking myBooking = new Booking();
    protected double totalPrice;
    protected double testPrice;
+   protected String snacks;
    
     public Tickets(){
 
@@ -62,5 +63,12 @@ public class Tickets {
         this.testPrice = testPrice;
     }
 
+    public String getSnacks() {
+        return snacks = "peanuts";
+    }
+
+    public void setSnacks(String snacks) {
+        this.snacks = snacks;
+    }
     
 }

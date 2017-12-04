@@ -17,6 +17,7 @@ public class Economy extends Tickets{
         myTickets = new Tickets();
 
     }
+    
 
 }
 
