@@ -46,15 +46,12 @@ public class Tickets {
     }
     */
 
-   /* 
+ 
     public double getTotalPrice() {
-        return totalPrice = myBooking.getTotalPrice();
+        return totalPrice ;
     }
-    */
     
-    public double getTotalPrice() {
-        return totalPrice;
-    }
+    
 
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
