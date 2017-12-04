@@ -14,9 +14,11 @@ public class Economy extends Tickets{
     Tickets myTickets;
    
     public Economy(){
+        super ();
         myTickets = new Tickets();
 
     }
+   
     
 
 }

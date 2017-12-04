@@ -12,9 +12,12 @@ package bookingapp;
 public class Business extends Tickets {
     
     Tickets myTickets;
+    String meal;
+    
     
 
     public Business() {
+        super ();
         myTickets = new Tickets();
     }
     
@@ -24,9 +27,12 @@ public class Business extends Tickets {
     }
     
    public String getMeal(){
-       return " Main Course (excluding desert)";
+       return meal = "Main Course (excluding desert)";
    }
+
+    public void setMeal(String meal) {
+        this.meal = meal;
+    }
    
-    
     
 }

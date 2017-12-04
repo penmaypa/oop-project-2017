@@ -4,6 +4,14 @@
  * and open the template in the editor.
  */
 package bookingapp;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 /**
  *
@@ -21,6 +29,8 @@ public class BookingGUI extends javax.swing.JFrame {
     Business myBusiness;
     First myFirst;
     
+    private ArrayList<Tickets> ticks;//declare ArrayList of type Module
+    
     
     /**
      * Creates new form BookingGUI
@@ -32,6 +42,7 @@ public class BookingGUI extends javax.swing.JFrame {
         myEconomy = new Economy();
         myBusiness = new Business();
         myFirst = new First();
+        ticks = new ArrayList<>();
     }
 
     /**
@@ -67,6 +78,7 @@ public class BookingGUI extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
         btn = new javax.swing.JLabel();
+        addBT = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -173,6 +185,13 @@ public class BookingGUI extends javax.swing.JFrame {
 
         btn.setText("jLabel6");
 
+        addBT.setText("Add");
+        addBT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addBTActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -240,9 +259,11 @@ public class BookingGUI extends javax.swing.JFrame {
                         .addGap(52, 52, 52))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(141, 141, 141)
                         .addComponent(nextBT, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(addBT, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,7 +310,9 @@ public class BookingGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nextBT, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(nextBT, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(addBT, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -374,6 +397,7 @@ public class BookingGUI extends javax.swing.JFrame {
                + "\n \n Business: "
                + "\n Business > totalPrice = " + myBusiness.totalPrice
                + "\n Business > getSnacks = " + myBusiness.getSnacks()
+               + "\n Business > meal = " + myBusiness.meal
                + "\n Business > getMeal = " + myBusiness.getMeal()
                
                + "\n \n First: "
@@ -382,6 +406,8 @@ public class BookingGUI extends javax.swing.JFrame {
                 + "\n First> getMeal = " + myFirst.getMeal()
         );
        
+       ticks.add(myTickets);
+       writeToFile();
        //myTickets.setTotalPrice(booking.getTotalPrice());
     }//GEN-LAST:event_nextBTActionPerformed
 
@@ -409,6 +435,24 @@ public class BookingGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_adultCBPropertyChange
 
+    private void addBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBTActionPerformed
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_addBTActionPerformed
+
+    public void writeToFile() {
+        try {
+            File f = new File("myTickets.dat");
+            FileOutputStream fStream = new FileOutputStream(f);
+            ObjectOutputStream oStream = new ObjectOutputStream(fStream);
+
+            oStream.writeObject(ticks);
+            oStream.close();
+        } catch (IOException ex) {
+            System.out.println(ex);
+        }
+    }
     /**
      * @param args the command line arguments
      */
@@ -444,7 +488,9 @@ public class BookingGUI extends javax.swing.JFrame {
         });
     }
 
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton addBT;
     private javax.swing.JComboBox<String> adultCB;
     private javax.swing.JLabel adultLBL;
     private javax.swing.JLabel btn;

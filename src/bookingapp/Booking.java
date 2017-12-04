@@ -8,7 +8,7 @@ package bookingapp;
  *
  * @author x16382003
  */
-//And the mods begins
+//And the mods beginsgit 
 public class Booking {
     
     protected double basePrice;
