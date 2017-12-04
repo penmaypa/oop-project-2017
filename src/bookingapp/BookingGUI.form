@@ -129,10 +129,12 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jScrollPane1" min="-2" pref="103" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
-                      <Component id="nextBT" min="-2" pref="126" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="addBT" min="-2" pref="126" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      <Component id="nextBT" min="-2" pref="103" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="addBT1" min="-2" pref="93" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="displayBT" min="-2" pref="93" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -195,7 +197,8 @@
                   <Component id="jScrollPane1" min="-2" pref="64" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="nextBT" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
-                      <Component id="addBT" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+                      <Component id="displayBT" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                      <Component id="addBT1" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -436,12 +439,20 @@
         <Property name="text" type="java.lang.String" value="jLabel6"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="addBT">
+    <Component class="javax.swing.JButton" name="displayBT">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Display"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="displayBTActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="addBT1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Add"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addBTActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addBT1ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

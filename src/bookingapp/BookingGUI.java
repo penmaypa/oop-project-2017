@@ -78,7 +78,8 @@ public class BookingGUI extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
         btn = new javax.swing.JLabel();
-        addBT = new javax.swing.JButton();
+        displayBT = new javax.swing.JButton();
+        addBT1 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -185,10 +186,17 @@ public class BookingGUI extends javax.swing.JFrame {
 
         btn.setText("jLabel6");
 
-        addBT.setText("Add");
-        addBT.addActionListener(new java.awt.event.ActionListener() {
+        displayBT.setText("Display");
+        displayBT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addBTActionPerformed(evt);
+                displayBTActionPerformed(evt);
+            }
+        });
+
+        addBT1.setText("Add");
+        addBT1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addBT1ActionPerformed(evt);
             }
         });
 
@@ -259,10 +267,12 @@ public class BookingGUI extends javax.swing.JFrame {
                         .addGap(52, 52, 52))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(141, 141, 141)
-                        .addComponent(nextBT, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addBT, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(49, 49, 49)
+                        .addComponent(nextBT, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(addBT1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(displayBT, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -312,7 +322,8 @@ public class BookingGUI extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(nextBT, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(addBT, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(displayBT, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(addBT1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -435,15 +446,22 @@ public class BookingGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_adultCBPropertyChange
 
-    private void addBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBTActionPerformed
+    private void displayBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayBTActionPerformed
         // TODO add your handling code here:
+        for (Tickets i : ticks) {
+
+              JOptionPane.showMessageDialog(null, i.getTotalPrice() + ", " + i.getDeparture() + ", " + i.getDestination() );
+        }
         
-        
-    }//GEN-LAST:event_addBTActionPerformed
+    }//GEN-LAST:event_displayBTActionPerformed
+
+    private void addBT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBT1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addBT1ActionPerformed
 
     public void writeToFile() {
         try {
-            File f = new File("myTickets.dat");
+            File f = new File("tickets.dat");
             FileOutputStream fStream = new FileOutputStream(f);
             ObjectOutputStream oStream = new ObjectOutputStream(fStream);
 
@@ -452,6 +470,20 @@ public class BookingGUI extends javax.swing.JFrame {
         } catch (IOException ex) {
             System.out.println(ex);
         }
+    }
+    
+     public void readFromFile() {
+        try {
+            File f = new File("tickets.dat");
+            FileInputStream fStream = new FileInputStream(f);
+            ObjectInputStream oStream = new ObjectInputStream(fStream);
+
+            ticks = (ArrayList<Tickets>) oStream.readObject();
+            oStream.close();
+        } catch (IOException | ClassNotFoundException ex) {
+            System.out.println(ex);
+        }
+
     }
     /**
      * @param args the command line arguments
@@ -490,7 +522,7 @@ public class BookingGUI extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addBT;
+    private javax.swing.JButton addBT1;
     private javax.swing.JComboBox<String> adultCB;
     private javax.swing.JLabel adultLBL;
     private javax.swing.JLabel btn;
@@ -499,6 +531,7 @@ public class BookingGUI extends javax.swing.JFrame {
     private javax.swing.JList<String> classLS;
     private javax.swing.JComboBox<String> departCB;
     private javax.swing.JComboBox<String> destinCB;
+    private javax.swing.JButton displayBT;
     private javax.swing.JLabel displayLB;
     private javax.swing.JComboBox<String> infantCB;
     private javax.swing.JLabel infantLBL;
