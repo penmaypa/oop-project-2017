@@ -6,11 +6,13 @@
  */
 package bookingapp;
 
+import java.io.Serializable;
+
 /**
  *
  * @author x16333223
  */
-public class Tickets {
+public class Tickets implements Serializable{
    protected String departure;
    protected String destination;
    Booking myBooking = new Booking();

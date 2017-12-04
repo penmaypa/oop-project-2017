@@ -4,12 +4,15 @@
  * and open the template in the editor.
  */
 package bookingapp;
+
+import java.io.Serializable;
+
 /**
  *
  * @author x16382003
  */
 //And the mods beginsgit 
-public class Booking {
+public class Booking implements Serializable{
     
     protected double basePrice;
     protected double depPrice;
