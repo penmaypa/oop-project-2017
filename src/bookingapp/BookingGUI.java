@@ -445,37 +445,38 @@ public class BookingGUI extends javax.swing.JFrame {
         myTickets.getDestination();
         myEconomy.setDestination(myTickets.destination);
         myEconomy.setDeparture(myTickets.departure);
+        myBusiness.setDestination(myTickets.destination);
+        myBusiness.setDeparture(myTickets.departure);
+        myFirst.setDestination(myTickets.destination);
+        myFirst.setDeparture(myTickets.departure);
      
-    if (seatType.equals("Economy")){
-        JOptionPane.showMessageDialog(null, "\n -- Economy Class --\n"
-            + "\n Passenger Name: " + myTickets.fName + " " + myTickets.lName
-            + "\n Departing from " + myEconomy.getDeparture()
-            + "\n Destination to " + myEconomy.getDestination()
-            + "\n You booked a seat for " + booking.getAdult() + " Adult, " + booking.getChild() + " Child , and " + booking.getInfant() + " Infant"
-            + "\n In Flight Snack: " + myEconomy.getSnacks()
-        );
-      }else if(seatType.equals("Business")){
+        if (seatType.equals("Economy")){
             JOptionPane.showMessageDialog(null, "\n -- Economy Class --\n"
             + "\n Passenger Name: " + myTickets.fName + " " + myTickets.lName
             + "\n Departing from " + myEconomy.getDeparture()
             + "\n Destination to " + myEconomy.getDestination()
             + "\n You booked a seat for " + booking.getAdult() + " Adult, " + booking.getChild() + " Child , and " + booking.getInfant() + " Infant"
             + "\n In Flight Snack: " + myEconomy.getSnacks());
-       }
-    else(){
-         JOptionPane.showMessageDialog(null, "\n -- Economy Class --\n"
-            + "\n Passenger Name: " + myTickets.fName + " " + myTickets.lName
-            + "\n Departing from " + myEconomy.getDeparture()
-            + "\n Destination to " + myEconomy.getDestination()
-            + "\n You booked a seat for " + booking.getAdult() + " Adult, " + booking.getChild() + " Child , and " + booking.getInfant() + " Infant"
-            + "\n In Flight Snack: " + myEconomy.getSnacks());
-    
-        }
-            
-    }
-     
-      
-      
+        }else if(seatType.equals("Business")){
+            JOptionPane.showMessageDialog(null, "\n -- Economy Class --\n"
+                + "\n Passenger Name: " + myTickets.fName + " " + myTickets.lName
+                + "\n Departing from " + myBusiness.getDeparture()
+                + "\n Destination to " + myBusiness.getDestination()
+                + "\n You booked a seat for " + booking.getAdult() + " Adult, " + booking.getChild() + " Child , and " + booking.getInfant() + " Infant"
+                + "\n In Flight Snack: " + myBusiness.getSnacks()
+                + "\n In Flight Meal: " + myBusiness.getMeal()
+            );
+        }else{
+               JOptionPane.showMessageDialog(null, "\n -- Economy Class --\n"
+                + "\n Passenger Name: " + myTickets.fName + " " + myTickets.lName
+                + "\n Departing from " + myFirst.getDeparture()
+                + "\n Destination to " + myFirst.getDestination()
+                + "\n You booked a seat for " + booking.getAdult() + " Adult, " + booking.getChild() + " Child , and " + booking.getInfant() + " Infant"
+                + "\n In Flight Snack: " + myFirst.getSnacks()
+                + "\n In Flight Meal: " + myFirst.getMeal()
+                + "\n In Flight Meal: " + myFirst.getDrink()
+               );   
+            }
     //JOptionPane.showMessageDialog(null, "/n Hello  ");
        
        //myTickets.setTotalPrice(booking.getTotalPrice());
