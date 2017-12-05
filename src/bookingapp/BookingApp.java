@@ -11,7 +11,9 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author x16382003
+ 
  */
+//
 public class BookingApp extends Booking{
 
     /**

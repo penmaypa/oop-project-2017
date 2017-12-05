@@ -11,9 +11,19 @@ import java.io.Serializable;
  *
  * @author x16382003
  */
-//And the mods beginsgit 
 
-// This what Penuel did these code 
+/*
+Throughtout the development of this project, we have used the Pair Programming Technique to ensure
+project team collaboration.  
+*/
+
+
+/*
+This class was developed by Penuel & Rehan. 
+Penuel was the driver (writres code) and Rehan observes, guiding and assisting in spotting errors.
+This class containes much of teh methods, values and calculation to run the apps.
+*/
+
 public class Booking implements Serializable{
     
     protected double basePrice;
@@ -113,19 +123,6 @@ public class Booking implements Serializable{
         this.infant = infant;
     }
      
-     
-
-    /*public void setAdultPrice(double adultPrice) {
-        this.adultPrice = adultPrice;
-    }
-
-    public void setChildPrice(double childPrice) {
-        this.childPrice = childPrice;
-    }
-
-    public void setInfantPrice(double infantPrice) {
-        this.infantPrice = infantPrice;
-    } */
 
     public double getAdultPrice() {
         if("Adult".equals(adult)){

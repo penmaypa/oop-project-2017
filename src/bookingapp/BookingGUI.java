@@ -16,8 +16,15 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 /**
  *
- * @author x16382003
+ * @author x16382003 - Penuel Maypa
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16382003 - Rehan Naeem
  */
+
+/*
+This GUI was created by Penuel and Lawrence.
+The GUI was partly designed and coded by Lawrence and partly by Penuel.
+*/
 public class BookingGUI extends javax.swing.JFrame {
     String departure = "" ;
     Booking booking;
@@ -407,7 +414,14 @@ public class BookingGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_departCBActionPerformed
 
     private void nextBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextBTActionPerformed
-        // TODO add your handling code here:
+        
+     /*
+        PAIR PROGRAMMING: Penuel & Lawrence
+        Writer - Penuel
+        Observer - Lawrence
+     */
+   
+    // TODO add your handling code here:
       departure= departCB.getSelectedItem().toString();
       booking.setDeparture(departure);
       myTickets.setDeparture(departure);
@@ -438,6 +452,13 @@ public class BookingGUI extends javax.swing.JFrame {
       
       lName = lNameTF.getText();
       myTickets.setlName(lName);
+      
+      
+       /*
+        PAIR PROGRAMMING: Penuel & Lawrence
+        Writer - Lawrence
+        Observer - Rehan
+     */
      
      //booking.getTotalPrice();
     // myTickets.setTotalPrice(booking.getTotalPrice());
@@ -478,9 +499,6 @@ public class BookingGUI extends javax.swing.JFrame {
                 + "\n In Flight Meal: " + myFirst.getDrink()
                );   
             }
-    //JOptionPane.showMessageDialog(null, "/n Hello  ");
-       
-       //myTickets.setTotalPrice(booking.getTotalPrice());
     }//GEN-LAST:event_nextBTActionPerformed
 
     private void onereturnCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onereturnCBActionPerformed
@@ -528,6 +546,9 @@ public class BookingGUI extends javax.swing.JFrame {
 
     private void valueTestBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valueTestBTActionPerformed
         // TODO add your handling code here:
+        
+        // This is coded by Penuel
+        // The purpose of this is to test that all the get method returns the correct values
           JOptionPane.showMessageDialog(null, "\n Booking:  "
               +"Booking n/ Your are departing from " + booking.getDeparture() + " "+ booking.getDepPrice()
              + " \n You are going to  " + booking.getDestination() + " " + booking.getDesPrice()
