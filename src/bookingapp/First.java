@@ -9,6 +9,9 @@ package bookingapp;
  *@author x16382003 - Penuel Maypa
  * @author x15044734 - Lawrence Bernabat
  * @author x16333223 - Rehan Naeem
+ * 
+ * GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
  */
 public class First extends Tickets {
     String meal;

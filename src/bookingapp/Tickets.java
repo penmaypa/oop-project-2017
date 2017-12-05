@@ -14,7 +14,9 @@ import java.io.Serializable;
  * @author x16333223 - Rehan Naeem
  */
 
-/*
+/*GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
+
 REFERENCES:
 The following resources was used as a learning resources are:
 = https://beginnersbook.com/2013/03/inheritance-in-java/

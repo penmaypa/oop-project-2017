@@ -12,7 +12,9 @@ import javax.swing.JOptionPane;
  *
  * @author x16382003
  * Coded by Penuel Maypa
- 
+ * 
+ GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
  */
 //
 public class BookingApp extends Booking{

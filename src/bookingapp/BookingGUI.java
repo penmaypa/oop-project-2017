@@ -19,6 +19,10 @@ import javax.swing.JOptionPane;
  * @author x16382003 - Penuel Maypa
  * @author x15044734 - Lawrence Bernabat
  * @author x16333223 - Rehan Naeem
+ * 
+ * GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
+ * 
  */
 
 /*
@@ -527,15 +531,39 @@ public class BookingGUI extends javax.swing.JFrame {
 
     private void displayBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayBTActionPerformed
         // TODO add your handling code here:
+        /*
+         The code in this method was taken from one of the example at a lab class and modified.
+         The original code was taken from the lab example that was shown to us and uplaoded by
+         our lecturer Frances Sheridan.
+        
+        Name of the Program: ModuleApp
+        Link: https://moodle.ncirl.ie/course/view.php?id=1040#section-10
+        */
+        
         for (Tickets i : ticks) {
 
-              JOptionPane.showMessageDialog(null, i.getTotalPrice() + ", " + i.getDeparture() + ", " + i.getDestination() + i.getDestination() );
+              JOptionPane.showMessageDialog(null, "The total Price is " + i.getTotalPrice()  
+                     + "\n You are departing from " + i.getDeparture() 
+                      + "\n You are going to  " + i.getDestination() 
+                   
+                      + "\n \n User Detail : " + i.getfName() +"  "+ i.getlName()
+              );
         }
         
     }//GEN-LAST:event_displayBTActionPerformed
 
     private void addBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBTActionPerformed
-        // TODO add your handling code here:
+        
+         // TODO add your handling code here:
+        /*
+         The code in this method was taken from one of the example at a lab class and modified.
+         The original code was taken from the lab example that was shown to us and uplaoded by
+         our lecturer Frances Sheridan.
+        
+        Name of the Program: ModuleApp
+        Link: https://moodle.ncirl.ie/course/view.php?id=1040#section-10
+        */
+        
         ticks.add(myTickets);
         writeToFile();
     }//GEN-LAST:event_addBTActionPerformed
@@ -602,6 +630,14 @@ public class BookingGUI extends javax.swing.JFrame {
 
     private void fNameTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fNameTFActionPerformed
         // TODO add your handling code here:
+        /*
+         The code in this method was taken from one of the example at a lab class and modified.
+         The original code was taken from the lab example that was shown to us and uplaoded by
+         our lecturer Frances Sheridan.
+        
+        Name of the Program: ModuleApp
+        Link: https://moodle.ncirl.ie/course/view.php?id=1040#section-10
+        */
     }//GEN-LAST:event_fNameTFActionPerformed
 
     public void writeToFile() {

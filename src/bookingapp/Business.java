@@ -14,6 +14,9 @@ package bookingapp;
  *PAIR PROGRAMMING -- Rehan & Lawrence
  * Writer - Lawrence
  * Observer - Rehan
+ * 
+ * GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
  */
 public class Business extends Tickets {
     
