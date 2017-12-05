@@ -19,6 +19,8 @@ public class Tickets implements Serializable{
    protected double totalPrice;
    protected double testPrice;
    protected String snacks;
+   protected String fName;
+   protected String lName;
    
     public Tickets(){
 
@@ -70,5 +72,23 @@ public class Tickets implements Serializable{
     public String getSnacks() {
         return snacks = "peanuts";
     }
+
+    public String getfName() {
+        return fName;
+    }
+
+    public void setfName(String fName) {
+        this.fName = fName;
+    }
+
+    public String getlName() {
+        return lName;
+    }
+
+    public void setlName(String lName) {
+        this.lName = lName;
+    }
+    
+    
     
 }

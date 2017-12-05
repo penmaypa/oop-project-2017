@@ -21,6 +21,10 @@ public class Business extends Tickets {
         myTickets = new Tickets();
     }
     
+    public double getTotalPrice(){
+       return totalPrice = getTotalPrice() + 100.00;
+     }
+    
     @Override
     public String getSnacks() {
         return snacks = "Premium Cookies";

@@ -27,6 +27,7 @@ public class Booking implements Serializable{
     protected double childPrice;
     protected double infantPrice;
     protected double testPrice ;
+    protected String seatType;
   
     
     public Booking(){
@@ -163,15 +164,20 @@ public class Booking implements Serializable{
     public int getInfant() {
         return infant;
     }
-
-    public void computeTotal(){
     
-        
+    public String getSeatType() {
+        return seatType;
+    }
+
+    public void setSeatType(String seatType) {
+        this.seatType = seatType;
     }
 
      public double getTotalPrice() {
+ 
+         
         return totalPrice = ((depPrice + desPrice+adultPrice)*adult)+((depPrice + desPrice+childPrice)*child)/*infant is free*/ ;
-       // return totalPrice = 999.00;
+       
     }
   
 
