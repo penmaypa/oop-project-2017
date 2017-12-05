@@ -8,8 +8,9 @@ package bookingapp;
 import java.io.Serializable;
 
 /**
- *
- * @author x16382003
+ * @author x16382003 - Penuel Maypa
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16333223 - Rehan Naeem
  */
 
 /*

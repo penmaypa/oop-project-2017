@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
  *
  * @author x16382003 - Penuel Maypa
  * @author x15044734 - Lawrence Bernabat
- * @author x16382003 - Rehan Naeem
+ * @author x16333223 - Rehan Naeem
  */
 
 /*

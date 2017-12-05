@@ -6,8 +6,14 @@
 package bookingapp;
 
 /**
+ * @author x16382003 - Penuel Maypa
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16333223 - Rehan Naeem
+ * 
  *
- * @author x16333223
+ *PAIR PROGRAMMING -- Rehan & Lawrence
+ * Writer - Lawrence
+ * Observer - Rehan
  */
 public class Business extends Tickets {
     

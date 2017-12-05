@@ -6,8 +6,9 @@
 package bookingapp;
 
 /**
- *
- * @author x16333223
+ *@author x16382003 - Penuel Maypa
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16333223 - Rehan Naeem
  */
 public class Economy extends Tickets{
 

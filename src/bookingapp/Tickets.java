@@ -9,9 +9,19 @@ package bookingapp;
 import java.io.Serializable;
 
 /**
- *
- * @author x16333223
+ *@author x16382003 - Penuel Maypa
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16333223 - Rehan Naeem
  */
+
+/*
+REFERENCES:
+The following resources was used as a learning resources are:
+= https://beginnersbook.com/2013/03/inheritance-in-java/
+= https://beginnersbook.com/2013/03/polymorphism-in-java/
+
+We have also looked at the past Lab work to get an idea for our projects.
+*/
 public class Tickets implements Serializable{
    protected String departure;
    protected String destination;
@@ -27,8 +37,7 @@ public class Tickets implements Serializable{
      }
    
    
-    //
-
+    // Penuel & Rehan
     public String getDeparture() {
         return departure ;
     }
@@ -56,7 +65,6 @@ public class Tickets implements Serializable{
     }
     
     
-
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
@@ -69,6 +77,7 @@ public class Tickets implements Serializable{
         this.testPrice = testPrice;
     }
 
+    //Lawrence & Penuel
     public String getSnacks() {
         return snacks = "peanuts";
     }
