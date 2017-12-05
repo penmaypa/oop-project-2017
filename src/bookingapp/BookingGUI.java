@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package bookingapp;
 import java.io.File;
 import java.io.FileInputStream;
@@ -458,7 +459,7 @@ public class BookingGUI extends javax.swing.JFrame {
             + "\n You booked a seat for " + booking.getAdult() + " Adult, " + booking.getChild() + " Child , and " + booking.getInfant() + " Infant"
             + "\n In Flight Snack: " + myEconomy.getSnacks());
         }else if(seatType.equals("Business")){
-            JOptionPane.showMessageDialog(null, "\n -- Economy Class --\n"
+            JOptionPane.showMessageDialog(null, "\n -- Business Class --\n"
                 + "\n Passenger Name: " + myTickets.fName + " " + myTickets.lName
                 + "\n Departing from " + myBusiness.getDeparture()
                 + "\n Destination to " + myBusiness.getDestination()
@@ -467,7 +468,7 @@ public class BookingGUI extends javax.swing.JFrame {
                 + "\n In Flight Meal: " + myBusiness.getMeal()
             );
         }else{
-               JOptionPane.showMessageDialog(null, "\n -- Economy Class --\n"
+               JOptionPane.showMessageDialog(null, "\n -- First Class --\n"
                 + "\n Passenger Name: " + myTickets.fName + " " + myTickets.lName
                 + "\n Departing from " + myFirst.getDeparture()
                 + "\n Destination to " + myFirst.getDestination()

@@ -12,6 +12,8 @@ import java.io.Serializable;
  * @author x16382003
  */
 //And the mods beginsgit 
+
+// This what Penuel did these code 
 public class Booking implements Serializable{
     
     protected double basePrice;
