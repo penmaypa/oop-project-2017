@@ -8,7 +8,7 @@ package bookingapp;
 import java.io.Serializable;
 
 /**
- * @author x16382003 - Penuel Mayp
+ * @author x16382003 - Penuel Maypa
  * @author x15044734 - Lawrence Bernabat
  * @author x16333223 - Rehan Naeem
  * 
@@ -42,9 +42,14 @@ public class Booking implements Serializable{
     protected double adultPrice;
     protected double childPrice;
     protected double infantPrice;
+<<<<<<< HEAD
+    Tickets myTickets = new Tickets();
+   
+=======
     protected double testPrice ;
     protected String seatType;
   
+>>>>>>> temp_3
     
     public Booking(){
         basePrice = 20.00;
@@ -188,10 +193,32 @@ public class Booking implements Serializable{
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
+<<<<<<< HEAD
+    
+       /*
+               public void calcDepPrice(){
+               if("Dublin".equals(departure)){
+                   depPrice = 30.00;
+                }
+                else{   
+                    depPrice = 20.00;
+                 }
+            }
+    */
+    
+    public void calcDesPrice(){
+        if("London".equals(departure)){
+            desPrice = 30.00;
+        }
+        else{
+            desPrice =60.00;
+        }
+            
+=======
 
     public double getTestPrice() {
         return testPrice = 777.00;
-
+>>>>>>> temp_3
     }
 
     public void setTestPrice(double testPrice) {

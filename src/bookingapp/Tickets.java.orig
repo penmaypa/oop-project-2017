@@ -35,7 +35,12 @@ public class Tickets implements Serializable{
    protected String lName;
    
     public Tickets(){
+<<<<<<< HEAD
+        myBooking = new Booking();
+        totalPrice = 0.00;
+=======
 
+>>>>>>> temp_3
      }
 
    
@@ -55,7 +60,16 @@ public class Tickets implements Serializable{
     public void setDestination(String destination) {
         this.destination = destination;
     }
+<<<<<<< HEAD
 
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+=======
    /* 
     public double getTotalPrice() {
         return totalPrice = totalPrice + myBooking.totalPrice;
@@ -100,6 +114,7 @@ public class Tickets implements Serializable{
     public void setlName(String lName) {
         this.lName = lName;
     }
+>>>>>>> temp_3
     
     
     
