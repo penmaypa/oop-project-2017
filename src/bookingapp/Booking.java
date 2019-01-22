@@ -4,11 +4,31 @@
  * and open the template in the editor.
  */
 package bookingapp;
+
+import java.io.Serializable;
+
 /**
- *
- * @author x16382003
+ * @author x16382003 - Penuel Mayp
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16333223 - Rehan Naeem
+ * 
+ * GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
  */
-public class Booking {
+
+/*
+Throughtout the development of this project, we have used the Pair Programming Technique to ensure
+project team collaboration.  
+*/
+
+
+/*
+This class was developed by Penuel & Rehan. 
+Penuel was the driver (writres code) and Rehan observes, guiding and assisting in spotting errors.
+This class containes much of teh methods, values and calculation to run the apps.
+*/
+
+public class Booking implements Serializable{
     
     protected double basePrice;
     protected double depPrice;
@@ -22,8 +42,14 @@ public class Booking {
     protected double adultPrice;
     protected double childPrice;
     protected double infantPrice;
+<<<<<<< HEAD
     Tickets myTickets = new Tickets();
    
+=======
+    protected double testPrice ;
+    protected String seatType;
+  
+>>>>>>> temp_3
     
     public Booking(){
         basePrice = 20.00;
@@ -107,19 +133,6 @@ public class Booking {
         this.infant = infant;
     }
      
-     
-
-    /*public void setAdultPrice(double adultPrice) {
-        this.adultPrice = adultPrice;
-    }
-
-    public void setChildPrice(double childPrice) {
-        this.childPrice = childPrice;
-    }
-
-    public void setInfantPrice(double infantPrice) {
-        this.infantPrice = infantPrice;
-    } */
 
     public double getAdultPrice() {
         if("Adult".equals(adult)){
@@ -160,17 +173,27 @@ public class Booking {
     public int getInfant() {
         return infant;
     }
+    
+    public String getSeatType() {
+        return seatType;
+    }
 
+    public void setSeatType(String seatType) {
+        this.seatType = seatType;
+    }
 
      public double getTotalPrice() {
-        
+ 
+         
         return totalPrice = ((depPrice + desPrice+adultPrice)*adult)+((depPrice + desPrice+childPrice)*child)/*infant is free*/ ;
+       
     }
   
 
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
+<<<<<<< HEAD
     
        /*
                public void calcDepPrice(){
@@ -191,23 +214,16 @@ public class Booking {
             desPrice =60.00;
         }
             
-    }
-    
-            /*
-            public void calcTotalPrice(){
-                totalPrice = depPrice + desPrice + basePrice ;
-            }
-            */
-    
- 
+=======
 
-   /* 
-    public double totalPrice(double basePrice, double depPrice, double desPrice){
-        return basePrice + depPrice + desPrice;
+    public double getTestPrice() {
+        return testPrice = 777.00;
+>>>>>>> temp_3
     }
-    */
 
-    
+    public void setTestPrice(double testPrice) {
+        this.testPrice = testPrice;
+    }
     
 
 }

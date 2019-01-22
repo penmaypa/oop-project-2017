@@ -6,31 +6,46 @@
 package bookingapp;
 
 /**
+ * @author x16382003 - Penuel Maypa
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16333223 - Rehan Naeem
+ * 
  *
- * @author x16333223
+ *PAIR PROGRAMMING -- Rehan & Lawrence
+ * Writer - Lawrence
+ * Observer - Rehan
+ * 
+ * GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
  */
 public class Business extends Tickets {
-    protected int business;
-    protected int quantity;
     
-    public Business(){
-        business = 15;
-        quantity = 0;
-    }
+    Tickets myTickets;
+    String meal;
+    
+    
 
-    public Business(int business, int quantity, int price, int total) {
-     
-        this.business = business;
-        this.quantity = quantity;
-    }
-
-    public void setBusiness(int business) {
-        this.business = business;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public Business() {
+        super ();
+        myTickets = new Tickets();
     }
     
+    public double getTotalPrice(){
+       return totalPrice = getTotalPrice() + 100.00;
+     }
+    
+    @Override
+    public String getSnacks() {
+        return snacks = "Premium Cookies";
+    }
+    
+   public String getMeal(){
+       return meal = "Main Course (excluding desert)";
+   }
+
+    public void setMeal(String meal) {
+        this.meal = meal;
+    }
+   
     
 }

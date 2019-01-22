@@ -6,8 +6,8 @@
 package bookingapp;
 import javax.swing.JOptionPane;
 /**
+ *This was supposed to be developed and designed by Lawrence but scrapped due to complications.
  *
- * @author x15044734
  */
 public class PassengerGUI extends javax.swing.JFrame {
 

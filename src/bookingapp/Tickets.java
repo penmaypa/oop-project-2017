@@ -6,24 +6,45 @@
  */
 package bookingapp;
 
+import java.io.Serializable;
+
 /**
- *
- * @author x16333223
+ *@author x16382003 - Penuel Maypa
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16333223 - Rehan Naeem
  */
-public class Tickets {
+
+/*GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
+
+REFERENCES:
+The following resources was used as a learning resources are:
+= https://beginnersbook.com/2013/03/inheritance-in-java/
+= https://beginnersbook.com/2013/03/polymorphism-in-java/
+
+We have also looked at the past Lab work to get an idea for our projects.
+*/
+public class Tickets implements Serializable{
    protected String departure;
    protected String destination;
-   Booking myBooking;
-   double  totalPrice;
+   Booking myBooking = new Booking();
+   protected double totalPrice;
+   protected double testPrice;
+   protected String snacks;
+   protected String fName;
+   protected String lName;
    
     public Tickets(){
+<<<<<<< HEAD
         myBooking = new Booking();
         totalPrice = 0.00;
+=======
+
+>>>>>>> temp_3
      }
 
    
-    //
-
+    // Penuel & Rehan
     public String getDeparture() {
         return departure ;
     }
@@ -33,12 +54,13 @@ public class Tickets {
     }
 
     public String getDestination() {
-        return destination;
+        return destination ;
     }
 
     public void setDestination(String destination) {
         this.destination = destination;
     }
+<<<<<<< HEAD
 
     public double getTotalPrice() {
         return totalPrice;
@@ -47,6 +69,52 @@ public class Tickets {
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
+=======
+   /* 
+    public double getTotalPrice() {
+        return totalPrice = totalPrice + myBooking.totalPrice;
+    }
+    */
+
+ 
+    public double getTotalPrice() {
+        return totalPrice ;
+    }
+    
+    
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public double getTestPrice() {
+        return testPrice = myBooking.getTestPrice();
+    }
+
+    public void setTestPrice(double testPrice) {
+        this.testPrice = testPrice;
+    }
+
+    //Lawrence & Penuel
+    public String getSnacks() {
+        return snacks = "peanuts";
+    }
+
+    public String getfName() {
+        return fName;
+    }
+
+    public void setfName(String fName) {
+        this.fName = fName;
+    }
+
+    public String getlName() {
+        return lName;
+    }
+
+    public void setlName(String lName) {
+        this.lName = lName;
+    }
+>>>>>>> temp_3
     
     
     

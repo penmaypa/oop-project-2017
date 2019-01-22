@@ -7,8 +7,10 @@ package bookingapp;
 
 /**
  *
- * @author x15044734
+ *
  */
+//This was supposed to be developed by Lawrence but scrapped due to complication
+
 public class Passenger extends Booking {
 
     protected String name;

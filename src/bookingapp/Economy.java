@@ -6,24 +6,24 @@
 package bookingapp;
 
 /**
- *
- * @author x16333223
+ *@author x16382003 - Penuel Maypa
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16333223 - Rehan Naeem
+ * 
+ * GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
  */
-public class Economy extends Tickets {
-    protected int economy;
-    protected int quantity;
-    Tickets myTickets ;
-    
-    public Economy(){
-        myTickets = new Tickets();
-        economy = 0;
-        quantity = 0;
-        
-    }
+public class Economy extends Tickets{
 
-    public Economy(int economy, int quantity, int price, int total) {
-        this.economy = economy;
-        this.quantity = quantity;
+    Tickets myTickets;
+   
+    public Economy(){
+        super ();
+        myTickets = new Tickets();
+
     }
+   
+    
 
 }
+

@@ -6,30 +6,44 @@
 package bookingapp;
 
 /**
- *
- * @author x16333223
+ *@author x16382003 - Penuel Maypa
+ * @author x15044734 - Lawrence Bernabat
+ * @author x16333223 - Rehan Naeem
+ * 
+ * GITHUB
+ * https://github.com/penmaypa/oop-project-2017/branches
  */
 public class First extends Tickets {
-    protected int first;
-    protected int quantity;
+    String meal;
+    String drink;
     
     public First(){
-        first = 25;
-        quantity = 0;
+        super();
+        meal = "";
+        drink = "";
     }
 
-    public First(int first, int quantity, int price, int total) {
-        this.first = first;
-        this.quantity = quantity;
-    }
-
-    public void setFirst(int first) {
-        this.first = first;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    @Override
+    public String getSnacks() {
+        return snacks = "Scones, Cupcake & Coffee";
     }
     
+    
+    public String getMeal() {
+        return "5 Course Meal";
+    }
+
+    public void setMeal(String meal) {
+        this.meal = meal;
+    }
+    
+    
+    public String getDrink(){
+        return "a bottle of wine & unlimited coffee/tea" ;
+    }
+
+    public void setDrink(String drink) {
+        this.drink = drink;
+    }
     
 }
